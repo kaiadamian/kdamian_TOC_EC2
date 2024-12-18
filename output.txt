@@ -1,0 +1,148 @@
+-------------------------------------------
+machine information:
+-------------------------------------------
+turing machine used: equal abs NTM
+input string used: aab
+accept state: qacc
+-------------------------------------------
+tree of configurations information:
+-------------------------------------------
+depth: 8
+number of configurations explored: 11
+total transitions (execution time): 10
+total nonleaves: 9
+average nondeterminism: 1.1111111111111112
+result: REJECTED in 8 transitions
+-------------------------------------------
+each configuration, beginning at the start:
+-------------------------------------------
+,q0,aab
+_,q1,ab
+_a,q1,b
+_,q3,ax
+_,q3,_ax
+_,q4,ax | _,q5,ax
+_x,q1,x | _a,qrej,x
+_xx,q1,_
+_xx_,qrej,_
+
+-------------------------------------------
+machine information:
+-------------------------------------------
+turing machine used: equal abs NTM
+input string used: aaabbb
+accept state: qacc
+-------------------------------------------
+tree of configurations information:
+-------------------------------------------
+depth: 31
+number of configurations explored: 44
+total transitions (execution time): 43
+total nonleaves: 40
+average nondeterminism: 1.075
+result: ACCEPTED in 31 transitions
+-------------------------------------------
+path of configurations to accept state:
+-------------------------------------------
+,q0,aaabbb
+_,q1,aabbb
+_a,q1,abbb
+_aa,q1,bbb
+_a,q3,axbb
+_,q3,aaxbb
+_,q3,_aaxbb
+_,q4,aaxbb
+_x,q1,axbb
+_xa,q1,xbb
+_xax,q1,bb
+_xa,q3,xxb
+_x,q3,axxb
+_,q3,xaxxb
+_,q3,_xaxxb
+_,q4,xaxxb
+_x,q4,axxb
+_xx,q1,xxb
+_xxx,q1,xb
+_xxxx,q1,b
+_xxx,q3,xx
+_xx,q3,xxx
+_x,q3,xxxx
+_,q3,xxxxx
+_,q3,_xxxxx
+_,q5,xxxxx
+_x,q5,xxxx
+_xx,q5,xxx
+_xxx,q5,xx
+_xxxx,q5,x
+_xxxxx,q5,_
+_xxxxx_,qacc,_
+-------------------------------------------
+each configuration, beginning at the start:
+-------------------------------------------
+,q0,aaabbb
+_,q1,aabbb
+_a,q1,abbb
+_aa,q1,bbb
+_a,q3,axbb
+_,q3,aaxbb
+_,q3,_aaxbb
+_,q4,aaxbb | _,q5,aaxbb
+_x,q1,axbb | _a,qrej,axbb
+_xa,q1,xbb
+_xax,q1,bb
+_xa,q3,xxb
+_x,q3,axxb
+_,q3,xaxxb
+_,q3,_xaxxb
+_,q4,xaxxb | _,q5,xaxxb
+_x,q4,axxb | _x,q5,axxb
+_xx,q1,xxb | _xa,qrej,xxb
+_xxx,q1,xb
+_xxxx,q1,b
+_xxx,q3,xx
+_xx,q3,xxx
+_x,q3,xxxx
+_,q3,xxxxx
+_,q3,_xxxxx
+_,q4,xxxxx | _,q5,xxxxx
+_x,q4,xxxx | _x,q5,xxxx
+_xx,q4,xxx | _xx,q5,xxx
+_xxx,q4,xx | _xxx,q5,xx
+_xxxx,q4,x | _xxxx,q5,x
+_xxxxx,q4,_ | _xxxxx,q5,_
+_xxxx,q3,x_ | _xxxxx_,qacc,_
+
+-------------------------------------------
+machine information:
+-------------------------------------------
+turing machine used: equal abs NTM
+input string used: ab
+accept state: qacc
+-------------------------------------------
+tree of configurations information:
+-------------------------------------------
+depth: 5
+number of configurations explored: 9
+total transitions (execution time): 8
+total nonleaves: 7
+average nondeterminism: 1.1428571428571428
+result: ACCEPTED in 5 transitions
+-------------------------------------------
+path of configurations to accept state:
+-------------------------------------------
+,q0,ab
+_,q1,b
+_,q3,_x
+_,q5,x
+_x,q5,_
+_x_,qacc,_
+-------------------------------------------
+each configuration, beginning at the start:
+-------------------------------------------
+,q0,ab
+_,q1,b
+_,q3,_x
+_,q4,x | _,q5,x
+_x,q4,_ | _x,q5,_
+_,q3,x_ | _x_,qacc,_
+
